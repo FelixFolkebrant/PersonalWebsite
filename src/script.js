@@ -6,6 +6,8 @@ function sleep (time) {
 // sleep(500).then(() => {
 //     //   code
 // });
+// The sleep are asynchronous so they will execute independently of other sleeps
+
 sleep(5000).then(() => {
     document.getElementById("logoNeumorph").style.opacity = "1";
     console.log("Changed Opacity")
