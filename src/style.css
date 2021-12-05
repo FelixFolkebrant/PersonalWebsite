@@ -9,22 +9,27 @@
     align-items: center;
     background-color: white;
 }
-
 .LogoHolder{
     position: relative;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     display: grid;
-    background-color: white;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
 }
 #logoNeumorph{
     position: relative;
-    width: 100%;
+    width: 65%;
     grid-area: 1 / 1;
+    left: 18%;
+    opacity: 0;
 }
-#logoHider{
-    opacity: 100%;
+#LogoAnim{
     position: relative;
-    width: 100%;
+    width: 101%;
     grid-area: 1 / 1;
+    background-color: none;
+    opacity: 1;
+    transition: 0.7s ease-in-out;
 }
