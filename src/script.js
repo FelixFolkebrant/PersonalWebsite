@@ -10,9 +10,8 @@ function sleep (time) {
 
 sleep(5000).then(() => {
     document.getElementById("logoNeumorph").style.opacity = "1";
-    console.log("Changed Opacity")
 });
 sleep(7000).then(() => {
     document.getElementById("LogoAnim").style.opacity = "0";
-    console.log("Changed Opacity")
+    document.getElementById("LogoHolder").style.top = "-20%";
 });
