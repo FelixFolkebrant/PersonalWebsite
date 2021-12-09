@@ -35,4 +35,5 @@
     background-color: none;
     opacity: 1;
     transition: 0.7s ease-in-out;
+    filter: invert(100);
 }

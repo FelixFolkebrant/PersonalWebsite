@@ -1,6 +1,7 @@
 html{
-    background-color: white;
+    background-color: #161616;
     cursor: none;
+    color: white;
     background-repeat: repeat-x;
     height: 400vh;
 }
@@ -11,7 +12,7 @@ html{
 .cursor{
     width: 2rem;
     height: 2rem;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -22,3 +23,70 @@ html{
     backdrop-filter: invert(100%) saturate(0%);
 }
 
+/* FONTS */
+/* -------------------------------------------------------------------------------------------- */
+
+@font-face {
+    font-family: Resotho;
+    src: url(".../assets/fonts/RESOTHO.otf");
+    font-style: normal;
+}
+@font-face {
+  font-family: Resotho;
+  src: url(".../assets/fonts/RESOTHO_ITALIC.otf");
+  font-style: italic;
+}
+
+
+/* Not working */
+@font-face {
+    font-family: SFPRO;
+    src: url(".../assets/fonts/SFPRO_DISPLAY.otf");
+    font-style: normal;
+}
+
+/* NAVBAR */
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+.NavBar{
+    width: 85%;
+    height: 10%;
+    background-color: none;
+    position: absolute;
+    left: 7.5%;
+    top: 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Links{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#About, #Portfolio, #Contact{
+    margin-left: 10%;
+    font-size: 22px;
+    color: white;
+    font-family: "SFPROTEXT";
+}
+
+.LogoTop{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#LogoFFTop{
+    width: 20%;
+    filter: invert(100);
+}
+#TextFFTop{
+    font-family: "Resotho";
+    margin-left: 2%;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    line-height: 100%;
+}

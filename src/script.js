@@ -9,9 +9,5 @@ function sleep (time) {
 // The sleep are asynchronous so they will execute independently of other sleeps
 
 sleep(5000).then(() => {
-    document.getElementById("logoNeumorph").style.opacity = "1";
-});
-sleep(7000).then(() => {
-    document.getElementById("LogoAnim").style.opacity = "0";
-    document.getElementById("LogoHolder").style.top = "-20%";
+    console.log(document.getElementById("Portfolio").style.fontFamily)
 });
